@@ -11,6 +11,9 @@ namespace VirtoCommerce.Domain.Cart.Model
 {
 	public class Shipment : Entity, IHaveTaxDetalization, ITaxable, IHasDiscounts, IHasDynamicProperties
     {
+        public DateTime? PickupDate { get; set; }
+        public string TrackingNumber { get; set; }
+
 		public string ShipmentMethodCode { get; set; }
         public string ShipmentMethodOption { get; set; }
         public string FulfillmentCenterId { get; set; }

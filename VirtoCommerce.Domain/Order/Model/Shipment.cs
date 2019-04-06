@@ -11,6 +11,9 @@ namespace VirtoCommerce.Domain.Order.Model
 		public string OrganizationId { get; set; }
 		public string OrganizationName { get; set; }
 
+        public DateTime? PickupDate { get; set; }
+        public string TrackingNumber { get; set; }
+
 		public string FulfillmentCenterId { get; set; }
 		public string FulfillmentCenterName { get; set; }
 

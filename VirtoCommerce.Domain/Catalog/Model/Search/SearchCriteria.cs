@@ -209,6 +209,8 @@ namespace VirtoCommerce.Domain.Catalog.Model
 
         public DateTime? StartDateFrom { get; set; }
 
+        public string CreatedBy { get; set; }
+
         public void Normalize()
         {
             Keyword = Keyword.EmptyToNull();

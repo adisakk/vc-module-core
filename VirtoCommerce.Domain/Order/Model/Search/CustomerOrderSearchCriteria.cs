@@ -99,5 +99,10 @@ namespace VirtoCommerce.Domain.Order.Model
         public string[] StoreIds { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
+
+        /// <summary>
+        /// Search order with product owner
+        /// </summary>
+        public string ProductOwner { get; set; }
     }
 }

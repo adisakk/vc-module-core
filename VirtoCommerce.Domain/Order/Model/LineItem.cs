@@ -87,6 +87,11 @@ namespace VirtoCommerce.Domain.Order.Model
         public string FulfillmentCenterId { get; set; }
         public string FulfillmentCenterName { get; set; }
 
+        /// <summary>
+        /// Used as a filter for customer order
+        /// </summary>
+        public string ProductOwner { get; set; }
+
 
         #region IHaveDimension Members
         public string WeightUnit { get; set; }

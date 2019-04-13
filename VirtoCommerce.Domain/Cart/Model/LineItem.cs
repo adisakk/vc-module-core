@@ -112,6 +112,11 @@ namespace VirtoCommerce.Domain.Cart.Model
 
         public virtual decimal FeeWithTax { get; set; }
 
+        /// <summary>
+        /// Used as a filter for customer order
+        /// </summary>
+        public string ProductOwner { get; set; }
+
 
         #region IHasDiscounts
         public ICollection<Discount> Discounts { get; set; }

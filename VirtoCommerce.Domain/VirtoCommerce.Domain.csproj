@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="Cart\Events\CartChangedEvent.cs" />
     <Compile Include="Cart\Events\CartChangeEvent.cs" />
+    <Compile Include="Cart\Model\CartResponseGroup.cs" />
     <Compile Include="Cart\Model\LineItem.cs" />
     <Compile Include="Cart\Model\Payment.cs" />
     <Compile Include="Cart\Model\Search\ShoppingCartSearchCriteria.cs" />

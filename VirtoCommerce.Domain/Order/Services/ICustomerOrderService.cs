@@ -7,7 +7,5 @@ namespace VirtoCommerce.Domain.Order.Services
         CustomerOrder[] GetByIds(string[] orderIds, string responseGroup = null);
         void SaveChanges(CustomerOrder[] orders);
         void Delete(string[] ids);
-
-        CustomerOrder[] GetByShoppingCartId(string shoppingCartId, string responseGroup = null);
     }
 }

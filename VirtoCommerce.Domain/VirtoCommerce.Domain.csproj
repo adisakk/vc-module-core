@@ -365,6 +365,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <Compile Include="Order\Model\SubOperation.cs" />
     <None Include="packages.config" />
     <None Include="VirtoCommerce.Domain.nuspec">
       <SubType>Designer</SubType>

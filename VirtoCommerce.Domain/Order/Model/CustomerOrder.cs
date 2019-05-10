@@ -43,6 +43,7 @@ namespace VirtoCommerce.Domain.Order.Model
 
 		public ICollection<LineItem> Items { get; set; }
 		public ICollection<Shipment> Shipments { get; set; }
+        public ICollection<SubOperation> SubOperations { get; set; }
 
 
         #region IHasDiscounts

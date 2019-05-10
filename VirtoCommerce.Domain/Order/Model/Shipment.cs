@@ -74,6 +74,9 @@ namespace VirtoCommerce.Domain.Order.Model
 
         public virtual decimal FeeWithTax { get; set; }
 
+        public virtual decimal AveragePrice { get; set; }
+        public virtual decimal AveragePriceWithTax { get; set; }
+
 
         #region ITaxable Members
 

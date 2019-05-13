@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using VirtoCommerce.Domain.Commerce.Model;
 using VirtoCommerce.Platform.Core.Common;
 
@@ -21,6 +21,8 @@ namespace VirtoCommerce.Domain.Catalog.Model
         public bool IsVirtual { get; set; }
         public int Level { get; set; }
         public Category[] Parents { get; set; }
+        public int PendingApprovalCount { get; set; }
+        public int RejectedCount { get; set; }
 
         //Type of product package (set of package types with their specific dimensions) can be inherited by nested products and categories
         public string PackageType { get; set; }

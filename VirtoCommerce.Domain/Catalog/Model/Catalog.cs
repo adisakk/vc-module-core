@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using VirtoCommerce.Platform.Core.Common;
 using System.Linq;
 using System;
@@ -9,6 +9,8 @@ namespace VirtoCommerce.Domain.Catalog.Model
     {
         public string Name { get; set; }
         public bool IsVirtual { get; set; }
+        public int PendingApprovalCount { get; set; }
+        public int RejectedCount { get; set; }
         public CatalogLanguage DefaultLanguage
         {
             get

@@ -74,6 +74,15 @@ namespace VirtoCommerce.Domain.Catalog.Model
         /// </summary>
         public int Priority { get; set; }
 
+        #region Approval members
+        public int PendingApprovalCount { get; set; }
+        public bool IsApproved { get; set; }
+        public bool IsRejected { get; set; }
+        public bool IsPendingApproval { get; set; }
+        public int RejectedCount { get; set; }
+        public string RejectionReason { get; set; }
+        #endregion
+
         #region IHasProperties members
         public ICollection<Property> Properties { get; set; }
         public ICollection<PropertyValue> PropertyValues { get; set; }

@@ -242,6 +242,7 @@
     <Compile Include="Order\Model\PaymentIn.cs" />
     <Compile Include="Order\Model\Search\CustomerOrderSearchCriteria.cs" />
     <Compile Include="Order\Model\Shipment.cs" />
+    <Compile Include="Order\Model\SubOperation.cs" />
     <Compile Include="Order\Services\ICustomerOrderService.cs" />
     <Compile Include="Order\Services\ICustomerOrderSearchService.cs" />
     <Compile Include="Inventory\Events\FulfillmentCenterChangingEvent.cs" />

@@ -138,6 +138,7 @@
     <Compile Include="Notifications\RegistrationInvitationNotification.cs" />
     <Compile Include="Notifications\RemindUserNameNotification.cs" />
     <Compile Include="Handlers\RegistrationEmailMemberChangedEventHandler.cs" />
+    <Compile Include="Payment\ManualPointPaymentMethodTest.cs" />
     <Compile Include="Payment\DefaultManualPaymentMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CommerceRepositoryImpl.cs" />

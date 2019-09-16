@@ -193,7 +193,15 @@ namespace VirtoCommerce.CoreModule.Web
                 IsActive = true,
                 Name = "Manual test payment method",
                 Description = "Manual test, don't use on production",
-                LogoUrl = "https://raw.githubusercontent.com/VirtoCommerce/vc-module-core/master/VirtoCommerce.CoreModule.Web/Content/logoVC.png",
+                LogoUrl = "https://raw.githubusercontent.com/VirtoCommerce/vc-module-Paypal-ExpressCheckout/master/Paypal.ExpressCheckout/Content/paypal_2014_logo.png",
+            });
+
+            paymentService.RegisterPaymentMethod(() => new ManualPointPaymentMethodTest
+            {
+                IsActive = true,
+                Name = "Pay by GF points",
+                Description = "GF points manual test, don't use on production",
+                LogoUrl = "https://pbs.twimg.com/profile_images/1140898832953176064/kWJ_42LI_400x400.png",
             });
 
             var currencies = commerceService.GetAllCurrencies();

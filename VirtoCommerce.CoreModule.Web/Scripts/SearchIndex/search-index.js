@@ -49,7 +49,9 @@ angular.module("virtoCommerce.coreModule.searchIndex", [])
             priority: 25,
             action: function () {
                 $state.go('workspace.searchIndexModule');
-            }
+            },
+            permission: 'store:access' // TODO Temporary use store:access to hide this from GF business partner
+
         });
     }
 ]);

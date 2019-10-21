@@ -33,6 +33,12 @@ namespace VirtoCommerce.Domain.Order.Model
 
         public virtual decimal ExtendedPriceWithTax { get; set; }
 
+        // TODO Change this quick workaround to a better solution.
+        // Create duplicate price member as formatted string to show in invoice
+        // because AngularJs currency did not formatting correctly via _notificationTemplateResolver.ResolveTemplate.
+        public virtual string PlacedPriceFormatted { get; set; }
+        public virtual string ExtendedPriceFormatted { get; set; }
+
         /// <summary>
         /// Gets the value of the single qty line item discount amount
         /// </summary>

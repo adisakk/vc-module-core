@@ -15,6 +15,21 @@ namespace VirtoCommerce.Domain.Order.Model
         public string OrganizationName { get; set; }
         public string EmployeeId { get; set; }
         public string EmployeeName { get; set; }
+
+        // TODO Save these in cart then copy to order insead of query on getInvoicePdf runtime
+        // Additional customer information to show in invoice
+        public string CustomerTaxId { get; set; }
+        public Address CustomerAddress { get; set; }
+
+        // TODO Change this quick workaround to a better solution.
+        // Create duplicate price member as formatted string to show in invoice
+        // because AngularJs currency did not formatting correctly via _notificationTemplateResolver.ResolveTemplate.
+        public string ShippingTotalFormatted { get; set; }
+        public string FeeTotalFormatted { get; set; }
+        public string SubTotalFormatted { get; set; }
+        public string TaxTotalFormatted { get; set; }
+        public string TotalFormatted { get; set; }
+
         /// <summary>
         /// The order identifier in an external system.
         /// </summary>

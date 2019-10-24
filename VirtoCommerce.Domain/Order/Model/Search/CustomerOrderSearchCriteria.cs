@@ -122,5 +122,11 @@ namespace VirtoCommerce.Domain.Order.Model
         /// Search order with product owner
         /// </summary>
         public string ProductOwner { get; set; }
+
+        /// <summary>
+        /// Search order with product name
+        /// </summary>
+        public string ProductName { get; set; }
+        public bool ProductNamePartial { get; set; }
     }
 }
